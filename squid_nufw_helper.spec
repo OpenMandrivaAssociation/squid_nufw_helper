@@ -10,6 +10,7 @@ Patch0:		squid_nufw_helper-1.0.0-rc2-postgresql.diff
 BuildRequires:	MySQL-devel
 BuildRequires:	postgresql-devel
 Requires:	squid
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 squid-nufw-helper is the authentication SSO module for Squid, working with a
