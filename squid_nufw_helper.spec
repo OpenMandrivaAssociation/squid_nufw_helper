@@ -1,7 +1,7 @@
 Summary:	NuFW SSO module for Squid
 Name:		squid_nufw_helper
 Version:	1.0.0
-Release:	%mkrel 0.rc2.2
+Release:	%mkrel 0.rc2.3
 Group:		System/Servers
 License:	GPL
 URL:		http://www.inl.fr/squid-nufw-helper.html
