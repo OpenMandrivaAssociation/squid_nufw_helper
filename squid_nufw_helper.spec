@@ -7,7 +7,7 @@ License:	GPL
 URL:		http://www.inl.fr/squid-nufw-helper.html
 Source0:	http://www.inl.fr/IMG/gz/%{name}-%{version}-rc2.tar.bz2
 Patch0:		squid_nufw_helper-1.0.0-rc2-postgresql.diff
-BuildRequires:	MySQL-devel
+BuildRequires:	mysql-devel
 BuildRequires:	postgresql-devel
 Requires:	squid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
