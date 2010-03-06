@@ -1,12 +1,12 @@
 Summary:	NuFW SSO module for Squid
 Name:		squid_nufw_helper
-Version:	1.0.0
-Release:	%mkrel 0.rc2.5
+Version:	1.1.3
+Release:	%mkrel 1
 Group:		System/Servers
 License:	GPL
 URL:		http://www.inl.fr/squid-nufw-helper.html
-Source0:	http://www.inl.fr/IMG/gz/%{name}-%{version}-rc2.tar.bz2
-Patch0:		squid_nufw_helper-1.0.0-rc2-postgresql.diff
+Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}.tar.bz2
+Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 BuildRequires:	mysql-devel
 BuildRequires:	postgresql-devel
 Requires:	squid
@@ -19,8 +19,8 @@ users on a Squid proxy, even if the proxy is a "transparent" one.
 
 %prep
 
-%setup -q -n %{name}-%{version}-rc2
-%patch0 -p1
+%setup -q -n squid-nufw-helper-%{version}
+%patch0 -p0
 
 # cleanup
 rm -rf autom4te.cache
@@ -52,7 +52,7 @@ install -m0755 squid_nufw_helper-mysql %{buildroot}%{_sbindir}/
 
 %files
 %defattr(-,root,root)
-%doc README Changelog doc/* example.conf
+%doc README ChangeLog squid_nufw_helper.conf
 %attr(0755,root,root) %{_sbindir}/squid_nufw_helper-postgresql
 %attr(0755,root,root) %{_sbindir}/squid_nufw_helper-mysql
 
