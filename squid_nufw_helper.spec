@@ -10,6 +10,7 @@ Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 BuildRequires:	mysql-devel
 #BuildRequires:	postgresql-devel <= 8.4.2
 BuildRequires:	postgresql8.4-devel
+BuildRequires:	postgresql-libs
 Requires:	squid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
