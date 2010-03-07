@@ -11,6 +11,7 @@ Patch1:		squid_nufw_helper-1.1.3-configure.diff
 BuildRequires:	mysql-devel
 BuildRequires:	pq-devel
 BuildRequires:	libxslt-devel
+BuildRequires:	pam-devel
 Requires:	squid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
