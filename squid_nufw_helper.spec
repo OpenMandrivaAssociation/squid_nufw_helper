@@ -12,6 +12,7 @@ BuildRequires:	mysql-devel
 BuildRequires:	pq-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	pam-devel
+BuildRequires:	readline-devel
 Requires:	squid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
