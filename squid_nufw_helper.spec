@@ -9,8 +9,7 @@ Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}
 Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 BuildRequires:	mysql-devel
 #BuildRequires:	postgresql-devel <= 8.4.2
-BuildRequires:	postgresql8.4-devel
-BuildRequires:	postgresql-libs
+BuildRequires:	pq-devel
 Requires:	squid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
