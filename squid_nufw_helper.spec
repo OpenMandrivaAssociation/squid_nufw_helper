@@ -7,6 +7,7 @@ License:	GPL
 URL:		http://www.inl.fr/squid-nufw-helper.html
 Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}.tar.bz2
 Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
+Patch1:		squid_nufw_helper-1.1.3-configure.diff
 BuildRequires:	mysql-devel
 BuildRequires:	pq-devel
 BuildRequires:	libxslt-devel
@@ -22,6 +23,7 @@ users on a Squid proxy, even if the proxy is a "transparent" one.
 
 %setup -q -n squid-nufw-helper-%{version}
 %patch0 -p0
+%patch1 -p0
 
 # cleanup
 rm -rf autom4te.cache
