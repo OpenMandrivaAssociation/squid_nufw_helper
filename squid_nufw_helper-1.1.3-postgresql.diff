@@ -1,0 +1,11 @@
+--- auth_nufw.h	2008-11-18 14:27:18.000000000 +0100
++++ auth_nufw.h.dlucio	2010-03-06 16:10:33.000000000 +0100
+@@ -52,7 +52,7 @@
+ #ifdef DB_TYPE_MYSQL
+ #  include <mysql/mysql.h>
+ #else
+-#  include <postgresql/libpq-fe.h>
++#  include <libpq-fe.h>
+ #endif
+ 
+ 

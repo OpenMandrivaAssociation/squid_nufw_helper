@@ -1,0 +1,11 @@
+--- configure	2008-11-18 14:31:16.000000000 +0100
++++ configure.dlucio	2010-03-07 03:50:04.000000000 +0100
+@@ -3983,7 +3983,7 @@
+ main ()
+ {
+ #if BYTE_ORDER != BIG_ENDIAN
+- not big endian
++  /* not big endian */
+ #endif
+ 
+   ;
