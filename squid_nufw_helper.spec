@@ -9,7 +9,7 @@ Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}
 Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 Patch1:		squid_nufw_helper-1.1.3-configure.diff
 BuildRequires:	mysql-devel
-BuildRequires:	postgresql-devel
+#BuildRequires:	postgresql-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	pam-devel
 BuildRequires:	readline-devel
@@ -33,7 +33,10 @@ rm -f squid_nufw_helper
 
 %build
 
-%configure2_5x
+# Build with mysql, fails to build with modern PostgreSQL
+%configure2_5x \
+    --with-mysql
+
 make clean
 %make
 
