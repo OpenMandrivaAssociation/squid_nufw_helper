@@ -4,7 +4,7 @@ Version:	1.1.3
 Release:	8
 Group:		System/Servers
 License:	GPL
-URL:		http://www.inl.fr/squid-nufw-helper.html
+URL:		https://www.inl.fr/squid-nufw-helper.html
 Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}.tar.bz2
 Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 Patch1:		squid_nufw_helper-1.1.3-configure.diff
