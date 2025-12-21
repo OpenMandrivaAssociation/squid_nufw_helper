@@ -8,6 +8,11 @@ URL:		https://www.inl.fr/squid-nufw-helper.html
 Source0:	http://www.nufw.org/attachments/download/7/squid-nufw-helper-%{version}.tar.bz2
 Patch0:		squid_nufw_helper-1.1.3-postgresql.diff
 Patch1:		squid_nufw_helper-1.1.3-configure.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	mysql-devel
 #BuildRequires:	postgresql-devel
 BuildRequires:	libxslt-devel
